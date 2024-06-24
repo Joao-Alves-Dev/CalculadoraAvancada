@@ -31,4 +31,8 @@ Se você quiser contribuir para este projeto, siga estes passos:
 
 ## Licença
 
+<<<<<<< HEAD
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+=======
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+>>>>>>> origin/main
