@@ -120,6 +120,10 @@ body.dark-theme .btn {
   margin: 5px 0;
 }
 
+body.dark-theme .bar {
+  background-color: #fff; /* Cor no tema escuro */
+}
+
 .menu-content {
   display: none;
   position: absolute;
