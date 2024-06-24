@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avançada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="history" class="history"></div>
+        <div id="display" class="display">0</div>
+        <div class="buttons">
+            <button class="btn" onclick="appendNumber(7)">7</button>
+            <button class="btn" onclick="appendNumber(8)">8</button>
+            <button class="btn" onclick="appendNumber(9)">9</button>
+            <button class="btn" onclick="chooseOperation('/')">/</button>
+            
+            <button class="btn" onclick="appendNumber(4)">4</button>
+            <button class="btn" onclick="appendNumber(5)">5</button>
+            <button class="btn" onclick="appendNumber(6)">6</button>
+            <button class="btn" onclick="chooseOperation('*')">*</button>
+            
+            <button class="btn" onclick="appendNumber(1)">1</button>
+            <button class="btn" onclick="appendNumber(2)">2</button>
+            <button class="btn" onclick="appendNumber(3)">3</button>
+            <button class="btn" onclick="chooseOperation('-')">-</button>
+            
+            <button class="btn" onclick="appendNumber(0)">0</button>
+            <button class="btn" onclick="appendNumber('.')">.</button>
+            <button class="btn" onclick="compute()">=</button>
+            <button class="btn" onclick="chooseOperation('+')">+</button>
+            
+            <button class="btn" onclick="computePercentage()">%</button>
+            <button class="btn" onclick="computeTrig('sin')">sin</button>
+            <button class="btn" onclick="computeTrig('cos')">cos</button>
+            <button class="btn" onclick="computeTrig('tan')">tan</button>
+            <button class="btn" onclick="appendParenthesis('(')">(</button>
+            <button class="btn" onclick="appendParenthesis(')')">)</button>
+            <button class="btn" onclick="convertUnits('cmToInch')">↔️</button>
+            <button class="btn btn-backspace" onclick="backspace()">⌫</button>
+            <button class="btn btn-clear" onclick="clearDisplay()">C</button>
+        </div>
+    </div>
+    <div class="menu">
+      <button class="btn btn-export" onclick="exportHistory()">Exportar</button>
+      <button class="btn btn-theme" onclick="toggleTheme()">🌓</button>
+      <button class="btn btn-help" onclick="showHelp()">?</button>
+      <button class="btn btn-clear-history" onclick="clearHistory()">Limpar Histórico</button>
+      <select id="language-selector" onchange="changeLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+          <!-- Adicione mais opções de idiomas conforme necessário -->
+      </select>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
